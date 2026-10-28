@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QPreview 隐私政策 / Privacy Policy</title>
+<style>
+  :root {
+    --ink: #1a1f2e;
+    --sub: #5b6472;
+    --line: #e3e8f0;
+    --brand: #1b4d78;
+    --accent: #0f766e;
+    --bg: #fbfcfe;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px 80px;
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.78 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; padding-bottom: 22px; border-bottom: 2px solid var(--line); }
+  header img { width: 44px; height: 44px; border-radius: 10px; }
+  header h1 { margin: 0; font-size: 22px; letter-spacing: .2px; }
+  header .meta { margin: 2px 0 0; font-size: 13px; color: var(--sub); }
+  h2 { margin: 38px 0 10px; font-size: 17px; }
+  h2 .en { color: var(--sub); font-weight: 500; font-size: 14px; }
+  p, li { color: #2b3242; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14.5px; }
+  th, td { text-align: left; padding: 10px 12px; border: 1px solid var(--line); vertical-align: top; }
+  th { background: #f2f6fb; font-weight: 600; }
+  code { background: #eef3f9; padding: 1px 5px; border-radius: 4px; font-size: 13.5px; }
+  .callout {
+    margin: 20px 0; padding: 16px 18px; border-left: 4px solid var(--accent);
+    background: #f0f8f6; border-radius: 0 8px 8px 0;
+  }
+  .callout strong { color: #0b5c55; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 44px 0; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 13.5px; color: var(--sub); }
+  a { color: #1a5fb4; }
+  @media (max-width: 560px) { body { padding: 28px 16px 60px; } th, td { font-size: 13.5px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="商店素材/store-icon-128.png" alt="QPreview">
+    <div>
+      <h1>QPreview 隐私政策</h1>
+      <p class="meta">生效日期：2026 年 10 月 25 日 · 适用版本：1.4.0 及以后 · 最后更新：2026-10-25</p>
+    </div>
+  </header>
+
+  <div class="callout">
+    <strong>一句话总结：附件在你的浏览器里解析，不上传、不外发、不留副本。</strong><br>
+    QPreview 没有服务器、没有账号体系、没有统计埋点，开发者不会收到你的任何文档内容或浏览记录。
+  </div>
+
+  <h2>1. 我们处理什么数据 <span class="en">What we process</span></h2>
+  <p>QPreview 的功能是"把页面上已有的附件渲染出来看"，因此它会在你的设备上读取以下内容：</p>
+  <ul>
+    <li><strong>附件内容</strong>：你主动点击预览的图片、PDF、Word、Excel、PPT、msg/eml 邮件或 HTML 文件的字节数据。</li>
+    <li><strong>页面上的附件信息</strong>：附件链接地址、文件名、以及响应头中的 <code>Content-Type</code> 与 <code>Content-Disposition</code>（仅用于判断文件类型和显示文件名）。</li>
+    <li><strong>你显式设置的偏好</strong>：适用范围（仅本页 / 全局）与界面语言。</li>
+  </ul>
+  <p>以上数据<strong>全部在你的浏览器进程内处理</strong>，解析结果只存在于当前页面的浮层中，关闭浮层即释放。</p>
+
+  <h2>2. 我们不做什么 <span class="en">What we never do</span></h2>
+  <ul>
+    <li>不把附件、页面内容、文件名或浏览记录<strong>上传到任何服务器</strong>（包括开发者自建服务器与第三方服务）。</li>
+    <li>不接入统计分析、崩溃上报、广告 SDK 或 A/B 实验。</li>
+    <li>不读取 Cookie、不读取账号密码或登录凭据、不读取剪贴板。</li>
+    <li>不修改页面上的业务数据，不代替你提交任何表单或下载操作。</li>
+    <li>不出售、不出租、不交换任何用户数据（也无可出售的数据）。</li>
+  </ul>
+
+  <h2>3. 权限与用途对照 <span class="en">Permissions</span></h2>
+  <table>
+    <thead><tr><th style="width:30%">权限</th><th>用途</th></tr></thead>
+    <tbody>
+      <tr><td><code>activeTab</code></td><td>你点击工具栏图标的那一刻，才获得当前标签页的注入许可。</td></tr>
+      <tr><td><code>scripting</code></td><td>把预览界面与附件捕获脚本注入到你已激活的页面及其子框架。</td></tr>
+      <tr><td><code>storage</code></td><td>本地保存"哪些标签已激活"（本次会话）与"适用范围 / 界面语言"（跨会话）。</td></tr>
+      <tr><td><code>tabs</code></td><td>在当前标签与后台之间传递面板显示状态。</td></tr>
+      <tr><td><code>webNavigation</code></td><td>子框架导航后补注入脚本，应对页面前端框架重建 iframe 的情况。</td></tr>
+      <tr><td><code>downloads</code></td><td>当你点击的附件属于可预览类型时，取消下载并改为就地预览；其他类型正常下载，不受影响。</td></tr>
+      <tr><td><code>webRequest</code></td><td>只读响应头，用于识别文件名与文件类型；不阻断、不修改、不重定向任何请求。</td></tr>
+      <tr><td>网站访问权限<br><code>http/https</code></td><td>网站与业务系统部署在各单位自有域名下，附件常由独立的文件服务器提供，需要按你激活的页面访问对应域名。未激活的页面不会被注入或读取。</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. 数据存储与保留 <span class="en">Storage &amp; retention</span></h2>
+  <ul>
+    <li><strong>设置项</strong>：通过 <code>chrome.storage</code> 保存在你的浏览器本地，并随你的 Google 账号同步（若开启浏览器同步）。</li>
+    <li><strong>附件与页面内容</strong>：仅存在于内存与当前页面的浮层中，不做持久化，不写入磁盘缓存。</li>
+    <li><strong>缓存的文件名/类型信息</strong>：仅在后台内存中保留最多 5 分钟，用于补齐缺失的文件名，随后自动清除。</li>
+    <li>卸载扩展后，本地设置与缓存随之删除。</li>
+  </ul>
+
+  <h2>5. 你的控制权 <span class="en">Your controls</span></h2>
+  <ul>
+    <li><strong>随时关闭</strong>：面板上的 × 会立即停止捕获与预览，附件恢复为正常下载。</li>
+    <li><strong>按页启用</strong>：默认"仅本页"模式，一次只对一个标签生效。</li>
+    <li><strong>清除数据</strong>：在 <code>chrome://extensions</code> 中移除扩展，即清除全部本地数据。</li>
+  </ul>
+
+  <h2>6. 儿童隐私 <span class="en">Children</span></h2>
+  <p>QPreview 面向办公场景，不面向 13 岁以下儿童，也不会有意处理儿童的个人信息。</p>
+
+  <h2>7. 政策变更 <span class="en">Changes</span></h2>
+  <p>若未来版本引入任何需要联网的功能（例如云端 OCR），我们会在本页更新政策、在扩展更新说明中明确告知，并在功能启用前征得你的同意。当前版本没有任何联网解析行为。</p>
+
+  <h2>8. 联系方式 <span class="en">Contact</span></h2>
+  <p>隐私相关问题、数据删除请求、安全漏洞报告，请联系：<br>
+  <strong>邮箱：</strong> <a href="mailto:your-email@example.com">your-email@example.com</a>（上架前请替换为真实邮箱）<br>
+  <strong>支持页面：</strong> 你的产品页或 GitHub 仓库 Issues 地址</p>
+
+  <hr>
+
+  <h2>Privacy Policy (English)</h2>
+  <p><strong>Summary:</strong> QPreview parses attachments inside your browser. Nothing is uploaded, shared, or retained.</p>
+  <ul>
+    <li><strong>Data processed:</strong> the bytes of attachments you explicitly preview (images, PDF, Word, Excel, PowerPoint, msg/eml, HTML), the attachment URL/filename and the response <code>Content-Type</code>/<code>Content-Disposition</code> headers, and your two settings (scope and UI language).</li>
+    <li><strong>No servers:</strong> all parsing happens locally in your browser. The developer receives no document content, filenames, or browsing history.</li>
+    <li><strong>No tracking:</strong> no analytics, no crash reporting, no advertising SDKs, no cookies, no clipboard access.</li>
+    <li><strong>Storage:</strong> settings live in <code>chrome.storage</code> on your device. Attachment bytes stay in memory and are released when the overlay closes. Cached filename/type metadata is kept in memory for at most 5 minutes.</li>
+    <li><strong>Permissions:</strong> access is only exercised on tabs you activate by clicking the toolbar icon, or while "All pages" mode is enabled. <code>webRequest</code> is used read-only for response headers; requests are never blocked or modified. <code>downloads</code> is used to cancel the download of a previewable attachment and show it in place instead.</li>
+    <li><strong>Your controls:</strong> close the panel with ×, switch between "this page" and "all pages", or uninstall the extension to delete all local data.</li>
+    <li><strong>Contact:</strong> your-email@example.com</li>
+  </ul>
+
+  <footer>
+    QPreview · 本政策以中文版本为准，英文版本仅供参考。<br>
+    上架前请把示例邮箱与支持链接替换为真实信息，并确保本页可通过公网直接访问（无需登录）。
+  </footer>
+</main>
+</body>
+</html>
